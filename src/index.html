@@ -1,14 +1,200 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Тестовое задание на позицию Frontend-разработчика">
     <title>Тестовое задание 500na700</title>
-  </head>
+    <link rel="icon" href="<%=require('./images/logo/500na700_logo.svg')%>" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="<%=require('./images/logo/500na700_logo.png')%>">
+</head>
+<body class="page">
+<header class="header">
+    <img src="<%=require('./images/logo/logo.svg')%>" alt="Логотип 500на700">
+    <nav role="menu">
+        <ul class="menu">
+            <li class="menu-item">
+                <p>Пункт 1</p>
+                <ul class="submenu">
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <p>Пункт 2</p>
+                <ul class="submenu">
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <p>Пункт 3</p>
+                <ul class="submenu">
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <p>Пункт 4</p>
+                <ul class="submenu">
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <p>Пункт 5</p>
+                <ul class="submenu">
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                    <li>Подпункт меню</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
 
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="<%=require('./images/slider/slider-1.png')%>">
+            </div>
+            <div class="swiper-slide">
+                <img src="<%=require('./images/slider/slider-1.png')%>">
+            </div>
+            <div class="swiper-slide">
+                <img src="<%=require('./images/slider/slider-1.png')%>">
+            </div>
+        </div>
+        <div class="swiper-nav-buttons">
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
+        </div>
+    </div>
+
+    <section class="faq">
+        <h2>FAQ</h2>
+        <ul class="accordion">
+            <li class="accordion-tab">
+                <h3>Как добраться до музея?</h3>
+                    <p class="accordion-tab-content accordion-tab-content_hidden">В Национальный музей Республики Татарстан можно добраться общественным транспортом:) «Станция метро «Кремлевская», а затем по направлению к Кремлю пройдя 5 минут пешком;</p>
+            </li>
+            <li class="accordion-tab">
+                <h3>Есть ли поблизости удобная парковка?</h3>
+                    <p class="accordion-tab-content accordion-tab-content_hidden">В Национальный музей Республики Татарстан можно добраться общественным транспортом:) «Станция метро «Кремлевская», а затем по направлению к Кремлю пройдя 5 минут пешком;</p>
+            </li>
+            <li class="accordion-tab">
+                <h3>Можно ли воспользоваться аудиогидом?</h3>
+                    <p class="accordion-tab-content accordion-tab-content_hidden">В Национальный музей Республики Татарстан можно добраться общественным транспортом:1) «Станция метро «Кремлевская», а затем по направлению к Кремлю пройдя 5 минут пешком;</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="news">
+        <h2>Новости</h2>
+        <div class="news-grid">
+            <article class="news-article">
+                <img src="<%=require('./images/news/1.png')%>">
+                <h3>Заголовок</h3>
+                <p>Описание Описание Описание Описание Описание Описание Описание</p>
+            </article>
+            <article class="news-article">
+                <img src="<%=require('./images/news/2.png')%>">
+                <h3>Заголовок</h3>
+                <p>Описание Описание Описание Описание Описание Описание Описание</p>
+            </article>
+            <article class="news-article">
+                <img src="<%=require('./images/news/3.png')%>">
+                <h3>Заголовок</h3>
+                <p>Описание Описание Описание Описание Описание Описание Описание</p>
+            </article>
+            <article class="news-article">
+                <img src="<%=require('./images/news/4.png')%>">
+                <h3>Заголовок</h3>
+                <p>Описание Описание Описание Описание Описание Описание Описание</p>
+            </article>
+            <article class="news-article">
+                <img src="<%=require('./images/news/5.png')%>">
+                <h3>Заголовок</h3>
+                <p>Описание Описание Описание Описание Описание Описание Описание</p>
+            </article>
+            <article class="news-article">
+                <img src="<%=require('./images/news/6.png')%>">
+                <h3>Заголовок</h3>
+                <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание Описание Описание Описание Описание</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<section class="subscription">
+    <form>
+        <h2>Подпишись</h2>
+        <p>Отправляем анонсы новых статей, выпусков и трансляций</p>
+        <fieldset>
+            <label>
+                <input placeholder="Email" type="email" required>
+            </label>
+            <label>
+                <input placeholder="11.02.2022" type="date" required>
+            </label>
+            <label>
+                <input placeholder="Телефон" type="text" required name="telephone">
+            </label>
+            <label>
+                <input placeholder="15:00" type="time" required>
+            </label>
+        </fieldset>
+        <button type="submit" title="Подписаться на новости">Подписаться</button>
+    </form>
+</section>
+<footer class="footer">
+
+    <div>
+        <h4>Заголовок</h4>
+        <p>Описание Описание Описание Описание Описание Описание Описание </p>
+        <a href="https://500na700.ru/">500na700.ru</a>
+    </div>
+
+    <nav aria-label="Блок ссылок на социальные сети">
+        <ul class="footer-icons">
+            <li>
+                <a href="#" aria-label="Ссылка на страницу ВК">
+                    <img src="<%=require('./images/footer/vk-icon.svg')%>">
+                </a>
+            </li>
+            <li>
+                <a href="#" aria-label="Ссылка на страницу в Facebook">
+                    <img src="<%=require('./images/footer/facebook-icon.svg')%>">
+                </a>
+            </li>
+            <li>
+                <a href="#" aria-label="Ссылка на страницу в TikTok">
+                    <img src="<%=require('./images/footer/tiktok-icon.svg')%>">
+                </a>
+            </li>
+            <li>
+                <a href="#" aria-label="Ссылка на канал на YouTube">
+                    <img src="<%=require('./images/footer/youtube-icon.svg')%>">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+</body>
 </html>

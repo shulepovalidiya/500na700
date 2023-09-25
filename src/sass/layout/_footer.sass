@@ -1,0 +1,25 @@
+@use '../abstracts/mixins'
+
+.footer
+  background-color: #312F35
+  margin: 0 -100px -80px
+  padding: 50px 100px
+  display: flex
+  gap: 119px
+
+  h4
+    @include mixins.font(16px, 500, 1.4)
+    margin: 0 0 10px
+  p
+    @include mixins.font(14px, 500, 1.4)
+    max-width: 400px
+    margin: 0 0 25px
+
+  a:visited
+    color: #FFFFFF
+
+.footer-icons
+  display: flex
+  list-style: none
+  gap: 30px
+  align-items: center

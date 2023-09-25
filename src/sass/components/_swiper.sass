@@ -1,0 +1,54 @@
+.swiper-button-prev
+  background-image: url('../images/slider/nav-buttons/slider-button-prev.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  background-color: transparent
+  border: none
+  width: 103px
+  height: 40px
+  cursor: pointer
+  transition: background-image .3s ease
+
+
+.swiper-button-prev:hover
+  background-image: url('../images/slider/nav-buttons/arrow-hover.svg')
+  transform: rotate(180deg)
+
+
+.swiper-button-next
+  padding: 0
+  background-image: url('../images/slider/nav-buttons/slider-button-next.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  background-color: transparent
+  border: none
+  width: 100px
+  height: 40px
+  cursor: pointer
+  transition: all .3s ease
+
+.swiper-button-next:hover
+  background-image: url('../images/slider/nav-buttons/arrow-hover.svg')
+
+
+.swiper
+  //min-height: 650px !important
+  //margin: 0 -100px !important
+  padding: 0 !important
+
+.swiper-wrapper
+  min-height: 650px !important
+
+.swiper-slide img
+  width: 100%
+  border-radius: 6px
+  overflow: hidden
+
+.swiper-nav-buttons
+  width: 100%
+  margin: auto
+  display: flex
+  justify-content: center
+  gap: 32px
