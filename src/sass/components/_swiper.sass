@@ -1,3 +1,5 @@
+@use '../abstracts/variables'
+
 .swiper-button-prev
   background-image: url('../images/slider/nav-buttons/slider-button-prev.svg')
   background-size: contain
@@ -34,17 +36,24 @@
 
 
 .swiper
-  //min-height: 650px !important
-  //margin: 0 -100px !important
-  padding: 0 !important
 
-.swiper-wrapper
-  min-height: 650px !important
+  padding: 0 15px
+//
+//.swiper-wrapper
+//  min-height: 650px !important
 
-.swiper-slide img
-  width: 100%
+//.swiper-slide img
+//  width: 100%
+//  border-radius: 6px
+
+.swiper-slide
   border-radius: 6px
-  overflow: hidden
+  background-image: url('../images/slider/slider-1.png')
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  width: 1240px !important
+  height: 650px !important
 
 .swiper-nav-buttons
   width: 100%
@@ -52,3 +61,6 @@
   display: flex
   justify-content: center
   gap: 32px
+
+@media screen and (max-width: variables.$breakpoint-xs)
+

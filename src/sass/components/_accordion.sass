@@ -1,25 +1,28 @@
 @use '../abstracts/mixins'
+@use '../abstracts/variables'
 
 .faq
-  margin-top: 150px
+  margin: 0
   display: flex
   gap: 98px
-
+  padding: 150px 100px 0
   h2
-    @include mixins.font(80px, 500, 1)
+    @include mixins.font(80px, 500, 1.06)
     margin: 0
+    letter-spacing: -3px
+    max-height: 85px
 
 .accordion
   min-height: fit-content
   list-style: none
   display: flex
   flex-direction: column
-  width: 988px
+  max-width: 988px
   margin: 0
   padding: 0
   border-top: 1px solid #FFFFFF
   h3
-    @include mixins.font(24px, 400, 1.4)
+    @include mixins.font(24px, 400, 1.46)
     margin: 0
 .accordion-tab
   border-bottom: 1px solid #FFFFFF33
@@ -36,3 +39,19 @@
   max-height: 0
   overflow: hidden
   margin: 0
+
+@media only screen and (max-width: variables.$breakpoint-xs)
+  .faq
+    padding: 0 15px
+    flex-direction: column
+    gap: 20px
+    h2
+      @include mixins.font(40px, 500, 2.12)
+  .accordion
+    h3
+      @include mixins.font(24px, 400, 1.46)
+  .accordion-tab
+    border-bottom: 1px solid #FFFFFF33
+    padding: 20px 0
+    cursor: pointer
+

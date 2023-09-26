@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,59 +9,62 @@
     <link rel="icon" href="<%=require('./images/logo/500na700_logo.svg')%>" type="image/svg+xml">
     <link rel="apple-touch-icon" href="<%=require('./images/logo/500na700_logo.png')%>">
 </head>
+
 <body class="page">
 <header class="header">
-    <img src="<%=require('./images/logo/logo.svg')%>" alt="Логотип 500на700">
-    <nav role="menu">
+    <img class="header-logo" src="<%=require('./images/logo/logo.svg')%>" alt="Логотип 500на700">
+    <button class="mobile-menu-open-button"></button>
+    <button class="mobile-menu-close-button"></button>
+    <nav role="menu" class="menu-container">
         <ul class="menu">
             <li class="menu-item">
                 <p>Пункт 1</p>
                 <ul class="submenu">
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
                 </ul>
             </li>
             <li class="menu-item">
                 <p>Пункт 2</p>
                 <ul class="submenu">
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
                 </ul>
             </li>
             <li class="menu-item">
                 <p>Пункт 3</p>
                 <ul class="submenu">
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
                 </ul>
             </li>
             <li class="menu-item">
                 <p>Пункт 4</p>
                 <ul class="submenu">
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
                 </ul>
             </li>
             <li class="menu-item">
                 <p>Пункт 5</p>
                 <ul class="submenu">
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
-                    <li>Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
+                    <li class="submenu-item">Подпункт меню</li>
                 </ul>
             </li>
         </ul>
@@ -71,13 +75,13 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="<%=require('./images/slider/slider-1.png')%>">
+<!--                <img src="<%=require('./images/slider/slider-1.png')%>">-->
             </div>
             <div class="swiper-slide">
-                <img src="<%=require('./images/slider/slider-1.png')%>">
+<!--                <img src="<%=require('./images/slider/slider-1.png')%>">-->
             </div>
             <div class="swiper-slide">
-                <img src="<%=require('./images/slider/slider-1.png')%>">
+<!--                <img src="<%=require('./images/slider/slider-1.png')%>">-->
             </div>
         </div>
         <div class="swiper-nav-buttons">
@@ -107,36 +111,36 @@
     <section class="news">
         <h2>Новости</h2>
         <div class="news-grid">
-            <article class="news-article">
-                <img src="<%=require('./images/news/1.png')%>">
-                <h3>Заголовок</h3>
-                <p>Описание Описание Описание Описание Описание Описание Описание</p>
-            </article>
-            <article class="news-article">
-                <img src="<%=require('./images/news/2.png')%>">
-                <h3>Заголовок</h3>
-                <p>Описание Описание Описание Описание Описание Описание Описание</p>
-            </article>
-            <article class="news-article">
-                <img src="<%=require('./images/news/3.png')%>">
-                <h3>Заголовок</h3>
-                <p>Описание Описание Описание Описание Описание Описание Описание</p>
-            </article>
-            <article class="news-article">
-                <img src="<%=require('./images/news/4.png')%>">
-                <h3>Заголовок</h3>
-                <p>Описание Описание Описание Описание Описание Описание Описание</p>
-            </article>
-            <article class="news-article">
-                <img src="<%=require('./images/news/5.png')%>">
-                <h3>Заголовок</h3>
-                <p>Описание Описание Описание Описание Описание Описание Описание</p>
-            </article>
-            <article class="news-article">
-                <img src="<%=require('./images/news/6.png')%>">
-                <h3>Заголовок</h3>
-                <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание Описание Описание Описание Описание</p>
-            </article>
+                <article class="news-article">
+                    <img src="<%=require('./images/news/1.png')%>">
+                    <h3>Заголовок</h3>
+                    <p>Описание Описание Описание Описание Описание Описание Описание</p>
+                </article>
+                <article class="news-article">
+                    <img src="<%=require('./images/news/2.png')%>">
+                    <h3>Заголовок</h3>
+                    <p>Описание Описание Описание Описание Описание Описание Описание</p>
+                </article>
+                <article class="news-article">
+                    <img src="<%=require('./images/news/3.png')%>">
+                    <h3>Заголовок</h3>
+                    <p>Описание Описание Описание Описание Описание Описание Описание</p>
+                </article>
+                <article class="news-article">
+                    <img src="<%=require('./images/news/4.png')%>">
+                    <h3>Заголовок</h3>
+                    <p>Описание Описание Описание Описание Описание Описание Описание</p>
+                </article>
+                <article class="news-article">
+                    <img src="<%=require('./images/news/5.png')%>">
+                    <h3>Заголовок</h3>
+                    <p>Описание Описание Описание Описание Описание Описание Описание</p>
+                </article>
+                <article class="news-article">
+                    <img src="<%=require('./images/news/6.png')%>">
+                    <h3>Заголовок</h3>
+                    <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание Описание Описание Описание Описание</p>
+                </article>
         </div>
     </section>
 </main>
@@ -147,23 +151,23 @@
         <p>Отправляем анонсы новых статей, выпусков и трансляций</p>
         <fieldset>
             <label>
-                <input placeholder="Email" type="email" required>
+                <input placeholder="Email" type="email" name="email" required>
             </label>
             <label>
-                <input placeholder="11.02.2022" type="date" required>
+                <input placeholder="11.02.2022" type="date" name="date" required>
             </label>
             <label>
                 <input placeholder="Телефон" type="text" required name="telephone">
             </label>
             <label>
-                <input placeholder="15:00" type="time" required>
+                <input placeholder="15:00" type="time" name="time" required>
             </label>
         </fieldset>
         <button type="submit" title="Подписаться на новости">Подписаться</button>
     </form>
 </section>
-<footer class="footer">
 
+<footer class="footer">
     <div>
         <h4>Заголовок</h4>
         <p>Описание Описание Описание Описание Описание Описание Описание </p>
@@ -194,7 +198,6 @@
             </li>
         </ul>
     </nav>
-
 </footer>
 </body>
 </html>

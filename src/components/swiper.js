@@ -1,30 +1,35 @@
 import Swiper from "swiper";
-import {Autoplay, EffectFade, Navigation} from "swiper/modules";
+import {Navigation} from "swiper/modules";
 import 'swiper/scss';
 import 'swiper/scss/autoplay';
 import 'swiper/scss/effect-fade';
 
 const swiper = new Swiper('.swiper', {
   loop: true,
-  loopedSlides: 1.75,
+  // loopFillGroupWithBlank: false,
   speed: 300,
-  modules: [Autoplay, Navigation],
-  slidesPerView: 1.2,
+  modules: [Navigation],
+  slidesPerView: "auto",
   spaceBetween: 10,
-  centeredSlides : true,
+  centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay: {
-    delay: 300,
-  },
-  autoHeight: true,
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      height: 450,
+      width: 290
+    },
     1000: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      centeredSlides: true,
+    },
+    1440: {
       slidesPerView: "auto",
-      spaceBetween: 0
+      height: 650,
     }
   },
-  breakpointsBase: "container"
-});
+})

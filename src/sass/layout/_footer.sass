@@ -1,9 +1,10 @@
 @use '../abstracts/mixins'
+@use '../abstracts/variables'
 
 .footer
   background-color: #312F35
-  margin: 0 -100px -80px
-  padding: 50px 100px
+  margin: 0
+  padding: 50px 100px 80px
   display: flex
   gap: 119px
 
@@ -23,3 +24,13 @@
   list-style: none
   gap: 30px
   align-items: center
+
+@media only screen and (max-width: variables.$breakpoint-xs)
+  .footer
+    flex-direction: column
+    padding: 80px 15px
+  .footer-icons
+    padding: 0
+    justify-content: center
+    margin: 0
+    max-height: 29px
