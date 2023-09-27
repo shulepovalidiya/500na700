@@ -9,7 +9,7 @@
   h2
     @include mixins.font(80px, 500, 1.06)
     margin: 0
-    letter-spacing: -3px
+    letter-spacing: -0.03em
     max-height: 85px
 
 .accordion
@@ -24,16 +24,17 @@
   h3
     @include mixins.font(24px, 400, 1.46)
     margin: 0
-.accordion-tab
-  border-bottom: 1px solid #FFFFFF33
-  padding: 30px 0
-  cursor: pointer
+  .accordion-tab
+    border-bottom: 1px solid #FFFFFF33
+    padding: 30px 0
+    cursor: pointer
 
 .accordion-tab-content
+  display: block
   margin: 30px 0 0 0
-  max-height: 100px
+  max-height: 500px
   position: relative
-  transition: all .3s ease-in
+  transition: all .2s ease
 
 .accordion-tab-content_hidden
   max-height: 0
@@ -42,7 +43,7 @@
 
 @media only screen and (max-width: variables.$breakpoint-xs)
   .faq
-    padding: 0 15px
+    padding: 80px 15px 0
     flex-direction: column
     gap: 20px
     h2

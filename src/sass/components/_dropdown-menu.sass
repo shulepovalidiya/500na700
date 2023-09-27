@@ -15,12 +15,14 @@
   position: sticky
   top: 0
   left: 0
+  pointer-events: none
   .menu-item
     min-width: 64px
     height: 100%
     display: flex
     padding-top: 20px
     box-sizing: border-box
+    pointer-events: auto
     p
      margin: 0
 
@@ -40,7 +42,9 @@
   .submenu-item
     margin: 0
     padding: 0
-    cursor: pointer
+  .submenu-link
+    text-decoration: none
+    color: variables.$text-color
 
 .menu-item:hover
   cursor: pointer
@@ -52,6 +56,18 @@
   column-gap: 142px
   row-gap: 30px
   cursor: default
+
+.menu:hover::after
+  content: ''
+  position: absolute
+  top: 70px
+  left: -354px
+  right: 0
+  bottom: 0
+  height: 100vh
+  width: 98.5vw
+  background-color: #00000033
+  z-index: -10
 
 @media screen and (max-width: variables.$breakpoint-xs)
   .menu
@@ -78,6 +94,7 @@
       border-bottom: none
     .menu-item:hover .submenu
       display: none
+
     .submenu
       @include mixins.font(14px, 500, 1.4)
       display: none
@@ -91,6 +108,8 @@
       .submenu-item p
         max-height: 100%
         max-width: 100%
+
+
 
 
 

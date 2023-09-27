@@ -1,11 +1,21 @@
-const accordion = document.querySelector('.accordion')
-const accordionTabs = accordion.querySelectorAll('.accordion-tab')
+const accordion = document.querySelector(".accordion");
+const accordionTabs = accordion.querySelectorAll(".accordion-tab");
 
-function handleTabClick(tab) {
-  const tabContent = tab.querySelector('.accordion-tab-content')
-  tabContent.classList.toggle('accordion-tab-content_hidden')
-}
+const hideAllTabsContent = () =>
+  document
+    .querySelectorAll(".accordion-tab-content")
+    .forEach((tabContent) =>
+      tabContent.classList.add("accordion-tab-content_hidden"),
+    );
 
 accordionTabs.forEach((tab) => {
-  tab.addEventListener('click', () => handleTabClick(tab))
-})
+  tab.addEventListener("click", () => {
+    const tabContent = tab.lastElementChild;
+    if (!tabContent.classList.contains("accordion-tab-content_hidden")) {
+      hideAllTabsContent();
+    } else {
+      hideAllTabsContent();
+      tabContent.classList.remove("accordion-tab-content_hidden");
+    }
+  });
+});

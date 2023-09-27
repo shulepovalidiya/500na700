@@ -1,6 +1,13 @@
 @use '../abstracts/mixins'
 @use '../abstracts/variables'
 
+.link
+  text-decoration: none
+  color: variables.$text-color
+
+.link:visited
+  color: variables.$text-color
+
 .news
   display: flex
   flex-direction: column
@@ -9,6 +16,7 @@
   h2
     @include mixins.font(80px, 500, 1)
     margin: 0
+    letter-spacing: -0.03em
 
 .news-grid
   display: grid
@@ -23,10 +31,11 @@
   flex-direction: column
   gap: 10px
   max-width: 400px
+  text-decoration: none
+  color: variables.$text-color
   h3
     @include mixins.font(16px, 500, 1.4)
     margin: 0
-
   p
     display: block
     @include mixins.font(14px, 500, 1.4)
@@ -40,9 +49,10 @@
 
 @media only screen and (max-width: variables.$breakpoint-xs)
   .news
-    padding: 0 15px
+    padding: 80px 0 0 0
     h2
       @include mixins.font(40px, 500, 2.12)
+      margin-left: 11px
   .news-grid
     display: none
 

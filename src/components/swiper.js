@@ -1,12 +1,12 @@
 import Swiper from "swiper";
-import {Navigation} from "swiper/modules";
-import 'swiper/scss';
-import 'swiper/scss/autoplay';
-import 'swiper/scss/effect-fade';
+import { Navigation } from "swiper/modules";
+import "swiper/scss";
+import "swiper/scss/autoplay";
+import "swiper/scss/effect-fade";
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper-main", {
   loop: true,
-  // loopFillGroupWithBlank: false,
+  loopedSlides: 1,
   speed: 300,
   modules: [Navigation],
   slidesPerView: "auto",
@@ -18,9 +18,10 @@ const swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: "auto",
+      spaceBetween: 10,
       height: 450,
-      width: 290
+      width: 320,
     },
     1000: {
       slidesPerView: 1,
@@ -28,8 +29,22 @@ const swiper = new Swiper('.swiper', {
       centeredSlides: true,
     },
     1440: {
-      slidesPerView: "auto",
-      height: 650,
-    }
+      width: 1440,
+    },
   },
-})
+});
+
+const newsSwiper = new Swiper(".news-swiper", {
+  loop: true,
+  speed: 300,
+  modules: [Navigation],
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  height: 450,
+  width: 290,
+});

@@ -1,4 +1,5 @@
 @use '../abstracts/variables'
+@use '../abstracts/mixins'
 
 .swiper-button-prev
   background-image: url('../images/slider/nav-buttons/slider-button-prev.svg')
@@ -12,11 +13,17 @@
   cursor: pointer
   transition: background-image .3s ease
 
-
 .swiper-button-prev:hover
   background-image: url('../images/slider/nav-buttons/arrow-hover.svg')
   transform: rotate(180deg)
 
+.slide-text
+  @include mixins.font(80px, 500, 1.06)
+  margin: 0
+  position: absolute
+  top: 67%
+  left: 4%
+  letter-spacing: -0.03em
 
 .swiper-button-next
   padding: 0
@@ -34,33 +41,68 @@
 .swiper-button-next:hover
   background-image: url('../images/slider/nav-buttons/arrow-hover.svg')
 
-
-.swiper
-
-  padding: 0 15px
-//
-//.swiper-wrapper
-//  min-height: 650px !important
-
-//.swiper-slide img
-//  width: 100%
-//  border-radius: 6px
-
-.swiper-slide
+.swiper-slide-main img
   border-radius: 6px
-  background-image: url('../images/slider/slider-1.png')
-  background-size: contain
-  background-repeat: no-repeat
-  background-position: center
-  width: 1240px !important
-  height: 650px !important
+
+.swiper-slide-main img::after
+  content: 'Слайд 1'
+  position: relative
+  top: 0
+  bottom: 0
+
+.swiper-slide-main
+  max-width: 1240px !important
+  max-height: 650px !important
+
+.swiper-slide img
+  object-fit: contain
 
 .swiper-nav-buttons
   width: 100%
-  margin: auto
+  margin: 55px auto 0
   display: flex
   justify-content: center
   gap: 32px
 
-@media screen and (max-width: variables.$breakpoint-xs)
+.news-swiper
+  display: none !important
 
+.swiper-slide-news
+  width: 400px !important
+  p
+    max-width: 400px
+    margin: 0
+  h3
+    max-width: 400px
+    margin: 0
+
+@media screen and (max-width: variables.$breakpoint-xs)
+  .news-swiper
+    display: block !important
+    width: 100%  !important
+  .swiper-slide-news
+    width: 200px !important
+  .swiper-slide-news img
+    object-fit: cover
+    width: 200px
+    height: 264px
+  .swiper-slide-news h3
+    display: block
+  .swiper-slide-news p
+    display: block
+    width: 100%
+
+  .swiper-main
+    width: 100% !important
+  .swiper-slide-main
+    width: 290px !important
+  .swiper-slide-main img
+    object-fit: cover
+    width: 290px
+    height: 450px
+  .slide-text
+    @include mixins.font(40px, 500, 2.12)
+    top: 40%
+    left: 7%
+  .swiper-nav-buttons
+    margin: 20px auto 0
