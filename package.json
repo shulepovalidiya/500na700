@@ -7,7 +7,8 @@
     "build": "webpack --mode production",
     "dev": "webpack serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "prettier": "prettier . --write"
   },
   "author": "Lidiya Shulepova",
   "license": "ISC",
@@ -24,7 +25,6 @@
     "prettier": "3.0.3",
     "sass": "^1.68.0",
     "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
