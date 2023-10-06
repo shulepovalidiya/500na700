@@ -2,3 +2,5 @@ node_modules
 .idea
 .git
 dist
+src/vendor/normalize.css
+package-lock.json
