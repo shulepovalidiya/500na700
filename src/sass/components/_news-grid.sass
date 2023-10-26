@@ -53,9 +53,16 @@
     h2
       @include mixins.font(40px, 500, 2.12)
       margin-left: 11px
+      width: 290px
   .news-grid
     display: none
 
 @media only screen and (max-width: variables.$breakpoint-s)
   .news-grid
     grid-template-columns: repeat(2, minmax(200px, 400px))
+
+@media only screen and (min-width: variables.$breakpoint-l)
+  .news
+    align-items: center
+    h2
+      width: 1226px

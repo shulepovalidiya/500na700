@@ -2,20 +2,16 @@
 @use '../abstracts/mixins'
 
 .swiper-button-prev
-  background-image: url('../images/slider/nav-buttons/slider-button-prev.svg')
-  background-size: contain
-  background-repeat: no-repeat
-  background-position: center
   background-color: transparent
   border: none
-  width: 103px
+  width: 100px
   height: 40px
   cursor: pointer
   transition: background-image .3s ease
+  fill: variables.$text-color
 
 .swiper-button-prev:hover
-  background-image: url('../images/slider/nav-buttons/arrow-hover.svg')
-  transform: rotate(180deg)
+  fill: variables.$hover-color
 
 .slide-text
   @include mixins.font(80px, 500, 1.06)
@@ -27,19 +23,16 @@
 
 .swiper-button-next
   padding: 0
-  background-image: url('../images/slider/nav-buttons/slider-button-next.svg')
-  background-size: contain
-  background-repeat: no-repeat
-  background-position: center
   background-color: transparent
-  border: none
   width: 100px
   height: 40px
+  border: none
   cursor: pointer
-  transition: all .3s ease
+  transition: all .3s
+  fill: #FFFFFF
 
 .swiper-button-next:hover
-  background-image: url('../images/slider/nav-buttons/arrow-hover.svg')
+  fill: #75FF72
 
 .swiper-slide-main img
   border-radius: 6px
