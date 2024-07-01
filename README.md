@@ -26,4 +26,4 @@
 1. Установить зависимости — `npm i`
 2. Выполнить команду `npm run dev` — страница автоматически откроется в режиме разработки по адресу [http://localhost:3000/](http://localhost:3000/)
 
-[Ссылка на проект на GitHub Pages](https://shulepovalidiya.github.io/500na700-test/)
+[Ссылка на проект на GitHub Pages](https://shulepovalidiya.github.io/500na700/)
